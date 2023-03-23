@@ -13,64 +13,104 @@ tags:
 
 ## Restore / Reset
 
+- Restore file change
+
 ```bash
-#1 - restore a file change
 git restore <filename>
+```
 
-#2 - reset all file changes
+- Reset all changes
+
+```bash
 git reset --hard HEAD
+```
 
-#3 - unstage a file
+- Unstage
+
+```bash
 git restore --cached <filename>
+```
 
-#4 - restore a deleted file (but didn't commit)
+- Restore accidental deletion before commit
+
+```bash
 git checkout HEAD <filename>
+```
 
-#5 - restore a deleted file (and committed)
+- Restore deleted file after commit
+
+```bash
 git reset --hard HEAD~1
 ```
 
 ## Remote
 
+- List remotes
+
 ```bash
-#1 - list existing remotes
 git remote -v
+```
 
-#2 - add remote
-git remote add <remote-name> <remote-url>
+- Add remote
 
-#3 - set remote url
-git remote set-url <remote-name> <remote-url>
+```bash
+git remote add <remote_name> <remote_url>
+```
+
+- Set remote url
+
+```bash
+git remote set-url <remote_name> <remote_url>
 ```
 
 ## Diff
 
+- Diff unstaged files
+
 ```bash
-#1 - diff unstaged files
 git diff
+```
 
-#2 - diff staged files
+- Diff staged files
+
+```bash
 git diff --staged
+```
 
-#3 - list staged files
+- List staged files
+
+```bash
 git diff --staged --name-only
 ```
 
 ## Branch
 
+- Clone specifying branch
+
 ```bash
-#1 - clone from a specific branch
-git clone -b <branch-name> <remote-url>
+git clone -b <branch_name> <remote_url>
+```
 
-#2 - create a branch and check it out
-git checkout -b <branch-name>
+- Create and checkout
 
-#3 - delete a local branch
-git branch -d <branch-name>
+```bash
+git checkout -b <branch_name>
+```
 
-#4 - delete a remote branch
-git push -d <remote-name> <branch-name>
+- Delete local branch
 
-#5 - update branches
+```bash
+git branch -d <branch_name>
+```
+
+- Delete remote branch
+
+```bash
+git push -d <remote_name> <branch_name>
+```
+
+- Update local branch list
+
+```bash
 git fetch -p
 ```
