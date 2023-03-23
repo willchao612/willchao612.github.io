@@ -1,10 +1,18 @@
-@import "variables.less";
-@import "mixins.less";
-@import "sidebar.less";
-@import "side-catalog.less";
-@import "snackbar.less";
-@import "highlight.less";
-@import "search.less";
+@import 'variables.less';
+@import 'mixins.less';
+@import 'sidebar.less';
+@import 'side-catalog.less';
+@import 'snackbar.less';
+@import 'highlight.less';
+@import 'search.less';
+
+@import (css) url(https://fonts.cdnfonts.com/css/operator-mono);
+@font-face {
+  font-family: 'ChenYuLuoYan Thin';
+  src: url('../fonts/ChenYuluoyan-Thin.woff2') format('woff2'),
+    url('../fonts/ChenYuluoyan-Thin.woff') format('woff'),
+    url('../fonts/ChenYuluoyan-Thin.ttf') format('truetype');
+}
 
 // Global Components
 
@@ -173,7 +181,7 @@ samp {
     }
   }
   h2::before {
-    content: " ";
+    content: ' ';
     display: block;
     border-bottom: 1px solid #ececec;
     margin-top: 44px;

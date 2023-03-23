@@ -1,10 +1,9 @@
-@import url('https://fonts.cdnfonts.com/css/operator-mono');
-@font-face {
-  font-family: 'ChenYuLuoYan Thin';
-  src: url('../fonts/ChenYuluoyan-Thin.woff2') format('woff2'),
-    url('../fonts/ChenYuluoyan-Thin.woff') format('woff'),
-    url('../fonts/ChenYuluoyan-Thin.ttf') format('truetype');
-}
+/*!
+ * Hux Blog v1.8.2 (http://huxpro.github.io)
+ * Copyright 2023 Hux <huxpro@gmail.com>
+ */
+
+@import url(https://fonts.cdnfonts.com/css/operator-mono);
 @media (min-width: 1200px) {
   .post-container,
   .sidebar-container {
@@ -70,13 +69,13 @@
   top: -21px;
 }
 .side-catalog.fold .catalog-toggle::before {
-  content: '+';
+  content: "+";
 }
 .side-catalog.fold .catalog-body {
   display: none;
 }
 .side-catalog .catalog-toggle::before {
-  content: '−';
+  content: "−";
   position: relative;
   margin-right: 5px;
   bottom: 1px;
@@ -147,8 +146,7 @@
   Please note this CSS is currently in   prototype form. We'll implement a cleaned up version in Web Starter Kit.
 */
 .paper-snackbar {
-  transition-property: opacity, bottom, left, right, width, margin,
-    border-radius;
+  transition-property: opacity, bottom, left, right, width, margin, border-radius;
   transition-duration: 0.5s;
   transition-timing-function: ease;
   /*font-family: RobotoDraft;*/
@@ -194,7 +192,7 @@
     Multi-line snackbar height: 80 dp
     Text: Roboto Regular 14 sp
     Action button: Roboto Medium 14 sp, all-caps text
-    Default background fill: #323232 100%
+    Default background fill: #323232 100%  
   */
     left: 0px;
     right: 0px;
@@ -222,7 +220,7 @@
   width: 160px;
   overflow: hidden;
   user-select: none;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
   border-radius: 3px;
   outline-color: #a3a3a3;
@@ -231,7 +229,7 @@
   cursor: pointer;
 }
 .paper-button button,
-.paper-button input[type='submit'] {
+.paper-button input[type="submit"] {
   background: inherit;
   border: none;
   display: block;
@@ -239,7 +237,7 @@
   height: 100%;
   /*font-family: 'Roboto';*/
   font-size: 1em;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
 }
 .paper-button.colored,
@@ -272,13 +270,13 @@ button.paper-button {
   /*font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;*/
   font-size: 1em;
   line-height: 25px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
-.paper-button input[type='submit'] {
+.paper-button input[type="submit"] {
   outline-color: #a3a3a3;
 }
-.paper-button.colored.raised-button input[type='submit'] {
-  color: #ffffff;
+.paper-button.colored.raised-button input[type="submit"] {
+  color: #fff;
 }
 /** Shadows **/
 .paper-shadow-animated.paper-shadow {
@@ -622,8 +620,7 @@ pre.highlight {
   font-size: 20px;
 }
 .search-page #search-input {
-  font-family: 'Operator Mono', 'Fira Code', Menlo, Monaco, Consolas,
-    'Courier New', monospace;
+  font-family: 'Operator Mono', 'Fira Code', Menlo, Monaco, Consolas, 'Courier New', monospace;
   border: none;
   outline: none;
   padding: 0;
@@ -660,17 +657,16 @@ pre.highlight {
 .search-icon-close {
   font-size: 16px;
 }
+@font-face {
+  font-family: 'ChenYuLuoYan Thin';
+  src: url('../fonts/ChenYuluoyan-Thin.woff2') format('woff2'), url('../fonts/ChenYuluoyan-Thin.woff') format('woff'), url('../fonts/ChenYuluoyan-Thin.ttf') format('truetype');
+}
 body {
   /* Hux learn from
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: 'ChenYuLuoYan Thin', -apple-system, BlinkMacSystemFont,
-    'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti',
-    'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC',
-    'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC',
-    'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun,
-    sans-serif;
+  font-family: 'ChenYuLuoYan Thin' -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
   line-height: 1.7;
   font-size: 16px;
   color: #404040;
@@ -697,12 +693,7 @@ h6 {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: 'ChenYuLuoYan Thin', -apple-system, BlinkMacSystemFont,
-    'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti',
-    'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC',
-    'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC',
-    'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun,
-    sans-serif;
+  font-family: 'ChenYuLuoYan Thin' -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
   line-height: 1.7;
   line-height: 1.1;
   font-weight: bold;
@@ -790,8 +781,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: 'Operator Mono', 'Fira Code', Menlo, Monaco, Consolas,
-    'Courier New', monospace;
+  font-family: 'Operator Mono', 'Fira Code', Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 .postlist-container {
   margin-bottom: 15px;
@@ -931,8 +921,7 @@ samp {
     border: none;
     background: white;
     box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
-    box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px,
-      rgba(0, 0, 0, 0.239216) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.239216) 0px 1px 4px;
     border-radius: 2px;
     width: 170px;
   }
@@ -966,8 +955,7 @@ samp {
     transition: transform 400ms cubic-bezier(0.32, 1, 0.23, 1) 0ms;
     -webkit-transform: scaleY(0);
     -webkit-transform-origin: top right;
-    -webkit-transition: -webkit-transform 400ms cubic-bezier(0.32, 1, 0.23, 1)
-      0ms;
+    -webkit-transition: -webkit-transform 400ms cubic-bezier(0.32, 1, 0.23, 1) 0ms;
   }
   #huxblog_navbar li {
     opacity: 0;
@@ -1005,12 +993,7 @@ samp {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: 'ChenYuLuoYan Thin', -apple-system, BlinkMacSystemFont,
-    'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti',
-    'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC',
-    'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC',
-    'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun,
-    sans-serif;
+  font-family: 'ChenYuLuoYan Thin' -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
   line-height: 1.7;
 }
 .navbar-custom .navbar-brand {
@@ -1206,12 +1189,7 @@ samp {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: 'ChenYuLuoYan Thin', -apple-system, BlinkMacSystemFont,
-    'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti',
-    'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC',
-    'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC',
-    'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun,
-    sans-serif;
+  font-family: 'ChenYuLuoYan Thin' -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
   line-height: 1.7;
   font-size: 18px;
   line-height: 1.1;
@@ -1239,12 +1217,7 @@ samp {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: 'ChenYuLuoYan Thin', -apple-system, BlinkMacSystemFont,
-    'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti',
-    'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC',
-    'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC',
-    'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun,
-    sans-serif;
+  font-family: 'ChenYuLuoYan Thin' -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
   line-height: 1.7;
   font-size: 17px;
   line-height: 1.4;
@@ -1394,12 +1367,7 @@ footer .copyright a:focus {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: 'ChenYuLuoYan Thin', -apple-system, BlinkMacSystemFont,
-    'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti',
-    'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC',
-    'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC',
-    'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun,
-    sans-serif;
+  font-family: 'ChenYuLuoYan Thin' -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
   line-height: 1.7;
   text-transform: uppercase;
   font-size: 14px;
@@ -1428,12 +1396,7 @@ footer .copyright a:focus {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: 'ChenYuLuoYan Thin', -apple-system, BlinkMacSystemFont,
-    'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti',
-    'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC',
-    'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC',
-    'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun,
-    sans-serif;
+  font-family: 'ChenYuLuoYan Thin' -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
   line-height: 1.7;
   text-transform: uppercase;
   font-size: 13px;
@@ -1567,8 +1530,7 @@ img::-moz-selection {
 }
 #tag_cloud a.focus,
 #tag_cloud .tag.focus {
-  box-shadow: rgba(0, 0, 0, 0.117647) 0 1px 6px,
-    rgba(0, 0, 0, 0.239216) 0 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0 1px 6px, rgba(0, 0, 0, 0.239216) 0 1px 4px;
 }
 #tag_cloud a.tag-button--all,
 #tag_cloud .tag.tag-button--all {
@@ -1621,12 +1583,7 @@ img::-moz-selection {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: 'ChenYuLuoYan Thin', -apple-system, BlinkMacSystemFont,
-    'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti',
-    'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC',
-    'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC',
-    'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun,
-    sans-serif;
+  font-family: 'ChenYuLuoYan Thin' -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', 'Microsoft JhengHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'WenQuanYi Micro Hei', SimSun, sans-serif;
   line-height: 1.7;
 }
 .mini-post-list .post-preview {
