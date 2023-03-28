@@ -1,11 +1,8 @@
-Hi，我是 Will，计算机本科三年级，前端开发者，[Vim](https://www.vim.org/) 发烧友/插件作者。
+Hi，我是 [William][1]，中国海洋大学 ➡️ 电子科技大学，AI 安全方向研究生，[Neovim][2] 发烧友。
 
-[![](https://github-readme-stats.vercel.app/api?username=willchao612&show_icons=true&theme=gruvbox)](https://github.com/willchao612)
+<a href="https://github.com/willchao612">
+  <img width="100%" src="https://github-readme-stats.vercel.app/api?username=willchao612&show_icons=true&theme=tokyonight" />
+</a>
 
-##### 项目经历
-
-* [Vim Diagon][1] - A Vim plugin for generating diagrams
-* [Vim Run][2] - A Vim plugin for executing buffer
-
-[1]: https://github.com/willchao612/vim-diagon
-[2]: https://github.com/willchao612/vim-run
+[1]: https://github.com/willchao612
+[2]: https://neovim.io

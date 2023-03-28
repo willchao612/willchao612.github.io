@@ -1,11 +1,9 @@
-Hi, I'm _@willchao612_ (Will Chao), SWE in China, Front-end developer, [Vim](https://www.vim.org/) enthusiast.
+Hi, I'm [@willchao612 (William Chao)][1], Ocean University of China ➡️ Xidian
+University, a postgraduate in AI security, [Neovim][2] enthusiast.
 
-[![](https://github-readme-stats.vercel.app/api?username=willchao612&show_icons=true&theme=gruvbox)](https://github.com/willchao612)
+<a href="https://github.com/willchao612">
+  <img width="100%" src="https://github-readme-stats.vercel.app/api?username=willchao612&show_icons=true&theme=tokyonight" />
+</a>
 
-##### Projects
-
-* [Vim Diagon][1] - A Vim plugin for generating diagrams
-* [Vim Run][2] - A Vim plugin for executing buffer
-
-[1]: https://github.com/willchao612/vim-diagon
-[2]: https://github.com/willchao612/vim-run
+[1]: https://github.com/willchao612
+[2]: https://neovim.io
